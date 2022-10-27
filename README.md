@@ -1,6 +1,6 @@
 # patient-management-system
 
-##Rationale
+## Rationale
 I made this web application for a local physiotherapist who has a successful practice wherein she visits her patients’ home for appointments. Most of the patients are above the age of 60 years.
 
 Her biggest problem lies in communicating with patients and keeping track of patient information. She currently uses iMessage, Instagram and direct calls to communicate with each patient. This form of communication is inefficient as it causes problems in keeping track of each patient’s appointments, exercise regimen and overall progress.
@@ -9,7 +9,7 @@ I realized that the major problem was the lack of a single communication and rec
 
 
 
-##Features:
+## Features:
 1. A register page that allows a new user (patient) to enter his/her details and create an account.
 
 2. A login page that allows users (patients) and the admin (physiotherapist) to access the website.
@@ -31,3 +31,7 @@ I realized that the major problem was the lack of a single communication and rec
 10. The admin should be able to import and export patient details to and from Excel
 
 11. All appointments, requests and exercise lists will be deleted on a monthly basis.
+
+## Product video
+Click on the link below to get redirected to the product demonstration. Dummy data has been used.
+https://drive.google.com/file/d/1mv1eH_eSw3izpgpvWvWqK5tUojeGW44O/view?usp=sharing
