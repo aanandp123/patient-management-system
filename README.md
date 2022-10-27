@@ -10,9 +10,9 @@ I realized that the major problem was the lack of a single communication and rec
 
 
 ##Features:
-1. A register page that allows a new user to enter his/her details and create an account.
+1. A register page that allows a new user (patient) to enter his/her details and create an account.
 
-2. A login page that allows users (patients) and the admin (client) to access the website.
+2. A login page that allows users (patients) and the admin (physiotherapist) to access the website.
 
 3. A user homepage that displays the upcoming appointments with the admin for the month.
 
