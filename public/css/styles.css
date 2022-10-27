@@ -1,0 +1,100 @@
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+
+
+.alltext{
+	margin: 5%;
+	margin-top: 2%;
+
+}
+
+.login{
+	text-align: center;
+	background:#ffffff
+}
+
+
+
+body{
+	  font-family: 'Times New Roman', serif;
+	background-image: url('https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+
+}
+
+
+
+.alltext-register{
+	text-align: center;
+
+
+}
+.center{
+	padding-left: 15%;
+	padding-right: 15%;
+	margin: 0 auto 0 auto;
+
+}
+
+img{
+	height: 40%;
+	width:40%;
+
+
+
+}
+h1, h2, h3, h4, h5{
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.button{
+  background:#D9BD32;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0.2em 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.button:hover{
+  background:#fff;
+  color:#D9BD32;;
+}
+.button:before,.button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #D9BD32;;
+  transition:400ms ease all;
+}
+.button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.button:hover:before,.button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.white{
+	text-align:center;
+	color: #ffffff;
+}

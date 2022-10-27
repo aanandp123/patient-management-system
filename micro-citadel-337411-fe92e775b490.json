@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "micro-citadel-337411",
+  "private_key_id": "fe92e775b4904bae2ba5cec9ce6790dcdbae48c2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCZn5LuWtkRhPrz\nwMQ5NvfQtNQf2aOsO1w432LZN5X2SyVKWe5IK2zD3+fQTmVZfHLgufhxMgOST8Pi\ncSZiXU5HPmhT8dBq9XwAHzpu/uqNj6X5SZ1Bf5glf5R38590V9dRSvWgjkA+gzfE\n0jq/y0rcQSCbZv0SEsB89zTP8n0hvtepTYbhicREL4LDDVfs/boA1mjYauncHpfO\nV1yF+gSIbqoj26Fw9Uy3FhJ8KfJq7Gc4Q6IDxTu8D4u7dMLtApA8FxhnX23/cBC+\nKRyCTLBjhydidCp47cahJrqnq3ZjSv88DlhTl+odlFRz7PsTHJZMDgUDaCZS5YNt\n9xWrfXbZAgMBAAECggEAC79PmYl56uSL2iLl/mgNKDkDtZHLecqqQTEX2nttLMHP\nTrG0znD/prTTAbNU/bROBpBCBsnnywLtfD3hzQjMiRclHDI0GVG/UzUQH1e/8OZI\nr1jpPQ54QHnSjR+klF15Oh6szMPD9uPK2nKnCm6NwWz7hNapyH2Fmai/sZ0d43wZ\npUsAdi6dNS4U6tMLH4dIi2/4tt1UipeZYb1nZIrQzByhXhgg3HPaRcbZ2Y9NY7Bm\nw55UES8o15LS7fLI1Woox4VEs8rR7Lf08Y/ZHT3qz28sGR5RvVpKs6DUhHA1Aooa\njRz0ov5fl5RjiUqqbfRA4hKbDnicOCG0HBrxcMBqOQKBgQDJnOuK6OoIWjZmvoi1\nSWuMAzwbj1w6j9oAz2HWa50PwG1oWe+5922RDgIK1HgRmo70yi7zxJVhRMUdAhmj\nmX38vMgzSAXJlMSJIPqVwdRtB4aHpI3CTrsdGjJih8UqppRALOQtPXvtQ5PSumsr\nXNJGI/Erv1mdDnNhJzHWyB1/tQKBgQDDEJBhNROEpzgQTIvkRru7RglzHs9SW3Uy\nN+bHnno1iDTgfZq8gpyqVj3cKbEqZhKwrEtn9ObAwnM/TjmZC7I76DquNKaCpi/t\nZRqR1QdkxmH1xoL7ZsEt/PqetPjxkF5RX789ZuvdFKVLAYxzZlzDIHNtTI2yRjZN\nzvqzf+YpFQKBgAUzulQkPF2ozjyKcAaVdWPwdW2UnmGYcpyQvUqGDlBou6n0oB3h\nR391qBHVd5+kqEmiqeF6UgxndNqRwk2ZWUnbKSNBmXyhDQ0ov657iNqjVhJL6ah4\n1ZUjpucp76lxEOQzBFQygO8XTkoiqz88LuTGaqOhVVObGtkH5N5Q3Yn9AoGAQRvf\nRUMFD8sM8IvMSda+RMUc1FsdUl0Kokd8dXbVTdb351KlenSSPFzq6vjTlNZbOLNZ\nvApHl2GQPDotCYOY61wZchpK1eMIrlGH69NSU3XQLswi3i0vH92H/b9kNKU+hiTS\nXXlkEvgYMBAFRGOPZOYJARuDVFURPSlwDsgLF/0CgYEAr+8Oje9gGD9EdWxwoOM/\nmm0H73Zs3flTbRPxDtjM1b97WYe7ODrEF25USChc7kNBRBPoqNrsT6YZfnuHqmQ5\nesO7vsKundWcyDmHrlgN6DzRSJjDNXZr5gex78IXhYOWViva1N+5m5ITjihvaGdc\noQ0qG10bOSJgeoUHLLAm+g0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "googlecalendarapi@micro-citadel-337411.iam.gserviceaccount.com",
+  "client_id": "104725475163613051104",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/googlecalendarapi%40micro-citadel-337411.iam.gserviceaccount.com"
+}

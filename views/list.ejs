@@ -1,0 +1,97 @@
+<%- include("partials/header"); -%>
+<div class="pos-f-t navigationtoggle">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <a class="text-white h4" href="/Ladmin">Homepage</a> <br  />
+      <a class="text-muted" href="/list">Patient List</a><br  />
+
+      <a class="text-muted" href="/makeappointment">Schedule Appointments</a><br  />
+      <a class="text-muted" href="/seereq">Appointment Requests</a><br  />
+      <a class="text-muted" href="/editexercise">Patient Exercises</a><br  />
+
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+<br />
+<div class ="alltext">
+<form action="/search" method="POST">
+<div class="input-group">
+  <div class="form-outline">
+    <input type="search" id="form1 name="search" class="form-control" />
+    <label class="form-label" for="form1">Search</label>
+  </div>
+  <button type="submit" class="btn btn-primary">
+    Search
+  </button>
+</div>
+</form>
+
+<br />
+
+
+<% let sum = 0;%>
+<h1 style = "color: #ffffff">Patients</h1>
+  <%for (var i =0;i<person.length;i++){%>
+
+
+<div class="row">
+  <div class="col-sm-8">
+    <div class="card">
+      <div class="card-body">
+
+          <div class="form-group">
+            <label for="text"> Full Name: <%= person[i].name%></label>
+          </div>
+
+          <div class="form-group">
+            <label for="text"> Mobile Number: <%= person[i].number%></label>
+          </div>
+
+          <div class="form-group">
+            <label for="text"> Condition: <%= person[i].condition%></label>
+          </div>
+          <div class="form-group">
+            <label for="text"> Sum owed by patient: <%= person[i].dates.length*1000%></label>
+          </div>
+<%sum = sum + person[i].dates.length*1000%>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<%}%>
+<br />
+<div class="row">
+  <div class="col-sm-8">
+    <div class="card">
+      <div class="card-body">
+        <div class="form-group">
+          <label for="text"> Total sum owed by all patients: <%= sum%></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br />
+
+<form action ="/Ladmin" method="get">
+    <input type="submit" class ="button" value ="Back">
+  </form>
+<br />
+<form action ="/export" method="get">
+
+    <input type="submit" class ="button" value ="Export">
+  </form>
+  <br />
+
+  <form action ="/import" method="get">
+
+      <input type="submit" class ="button" value ="Import">
+    </form>
+</div>

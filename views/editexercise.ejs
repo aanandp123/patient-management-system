@@ -1,0 +1,84 @@
+<%- include("partials/header"); -%>
+<div class="pos-f-t navigationtoggle">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <a class="text-white h4" href="/Ladmin">Homepage</a> <br  />
+      <a class="text-muted" href="/list">Patient List</a><br  />
+
+      <a class="text-muted" href="/makeappointment">Schedule Appointments</a><br  />
+      <a class="text-muted" href="/seereq">Appointment Requests</a><br  />
+      <a class="text-muted" href="/editexercise">Patient Exercises</a><br  />
+
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+
+
+<div class ="alltext">
+
+<h1 style = "color: #ffffff">Home exercises</h1>
+  <%for (var i =0;i<users.length;i++){%>
+
+
+<div class="row">
+  <div class="col-sm-8">
+    <div class="card">
+      <div class="card-body">
+
+        <div class="form-group">
+          <label for="text">Name: <%= users[i].name%></label>
+        </div>
+        <%for (var j =0;j<users[i].exercise.length;j++){%>
+
+          <div class="form-group">
+            <label for="text">Exercise: <%= users[i].exercise[j]%></label>
+          </div>
+
+          <div class="form-group">
+            <label for="text"> Description: <%= users[i].exercisedesc[j]%></label>
+          </div>
+        <%}%>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<br />
+<%}%>
+<br />
+
+<div class="row">
+  <div class="col-sm-8">
+    <div class="card">
+      <div class="card-body">
+        <form action="/addexercise" method="post">
+          <label> Add an exercise: </label><br />
+          <select name ="user" required>
+            <%  for(var i =0; i<users.length;i++){ %>
+              <option> <%= users[i].name%> </option>
+            <%}%>
+            </select>
+            <select name ="exercise" required>
+              <%  for(var y =0; y<exercise.length;y++){ %>
+                <option> <%= exercise[y].exercise%> </option>
+              <%}%>
+              <input type="submit" value="Add" id ="button3"/>
+
+                </select>
+            </form>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+</div>

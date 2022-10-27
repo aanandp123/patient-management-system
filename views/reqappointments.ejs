@@ -1,0 +1,49 @@
+<%- include("partials/header"); -%>
+<div class="pos-f-t navigationtoggle">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <a class="text-white h4" href="/Luser">Homepage</a> <br  />
+
+
+      <a class="text-muted" href="/reqappointments">Request Appointments</a><br  />
+
+      <a class="text-muted" href="/seeexercise">Patient Exercises</a><br  />
+
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+
+<div class ="alltext">
+
+  <h1>Update Date & Timings</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /login route -->
+          <form action="/reqappointments" method="post">
+
+
+
+            <div class="form-group">
+              <label for="text">Day and Time?</label>
+              <input type="text" class="form-control" name="date_of_appointment" required ="required">
+            </div>
+
+            <input type="submit" class ="button" value ="Request">
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

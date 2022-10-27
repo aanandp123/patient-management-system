@@ -1,0 +1,54 @@
+<%- include("partials/header"); -%>
+<div class="pos-f-t navigationtoggle">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <a class="text-white h4" href="/Luser">Homepage</a> <br  />
+
+
+      <a class="text-muted" href="/reqappointments">Request Appointments</a><br  />
+
+      <a class="text-muted" href="/seeexercise">Patient Exercises</a><br  />
+
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+
+
+<div class ="row">
+
+  <div class ="col-lg-12 col-md-12 col-sm-12 center">
+     <div class="card center" style="width: 85%;">
+  <ol>
+    <h3>Appointments</h3>
+
+    <% if(person.dates.length!=null){%>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Day and Time</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+      <% for(var i =0; i < person.dates.length; i++){%>
+        <tr>
+        <th scope="row"><%=i+1%></th>
+
+        <td><%= person.dates[i]%></td>
+        </tr>
+
+      <%}%>
+
+    </tbody>
+    </table>
+      <%}%>
+    </div>
+    </div>
+    </div>

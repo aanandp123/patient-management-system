@@ -1,0 +1,58 @@
+<%- include("partials/header"); -%>
+<div class="pos-f-t navigationtoggle">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <a class="text-white h4" href="/Ladmin">Homepage</a> <br  />
+      <a class="text-muted" href="/list">Patient List</a><br  />
+
+      <a class="text-muted" href="/makeappointment">Schedule Appointments</a><br  />
+      <a class="text-muted" href="/seereq">Appointment Requests</a><br  />
+      <a class="text-muted" href="/editexercise">Patient Exercises</a><br  />
+
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+
+
+<div class ="alltext">
+
+<div class="row">
+  <div class="col-sm-8">
+    <div class="card">
+      <div class="card-body">
+
+          <div class="form-group">
+            <label for="text"> Full Name: <%= person.name%></label>
+          </div>
+
+          <div class="form-group">
+            <label for="text"> Mobile Number: <%= person.number%></label>
+          </div>
+
+          <div class="form-group">
+            <label for="text"> Condition: <%= person.condition%></label>
+          </div>
+          <div class="form-group">
+            <label for="text"> Sum owed by patient: <%= person.dates.length*1000%></label>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+
+
+
+
+<form action ="/exporttopdf" method="post">
+    <input type ="hidden" name="username" value ="<%=person.username%>">
+    <input type="submit" class ="button" value ="Export to PDF">
+  </form>
+  <br />
+</div>
